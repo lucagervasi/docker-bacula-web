@@ -8,7 +8,7 @@ RUN yum install --enablerepo=remi httpd php56 php56-php php56-php-cli php56-php-
     php56-php-mysqlnd php56-php-pdo php56-php-pear php56-php-pecl-jsonc php56-php-pecl-zip php56-php-process php56-php-xml \
     php56-runtime wget tar -y
 
-RUN wget -q -O bacula-web-latest.tgz http://www.bacula-web.org/files/bacula-web.org/downloads/bacula-web-latest.tgz && \
+RUN wget -q -O bacula-web-latest.tgz https://github.com/bacula-web/bacula-web/releases/download/v8.3.3/bacula-web-8.3.3.tgz && \
     tar -xzf bacula-web-latest.tgz -C /var/www/html/ && \
     chown -R apache /var/www/html/ && \
     chmod -R u=rx,g=rx,o=rx /var/www/html/ && \

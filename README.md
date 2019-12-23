@@ -1,5 +1,7 @@
 # docker-bacula-web
 
+Note: this is not an original work. I forked [https://www.github.com/j3br/docker-bacula-web]
+
 ### How to run it
 
 The following environment variables need to be passed to the container:

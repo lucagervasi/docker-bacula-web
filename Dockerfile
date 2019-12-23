@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:7
 
 RUN yum -y update && \
     yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \

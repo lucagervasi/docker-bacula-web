@@ -26,4 +26,6 @@ EOF
 echo "date.timezone = $IPHP_TIMEZONE" >> /etc/php.ini
 echo "date.timezone = $IPHP_TIMEZONE" >> /opt/remi/php56/root/etc/php.ini
 
+echo "ServerName baculaweb" > /etc/httpd/conf.d/servername.conf
+
 /usr/sbin/httpd -D FOREGROUND
